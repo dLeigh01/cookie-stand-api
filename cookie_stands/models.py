@@ -12,6 +12,7 @@ class CookieStand(models.Model):
     minimum_customers_per_hour = models.IntegerField(default=0)
     maximum_customers_per_hour = models.IntegerField(default=0)
     average_cookies_per_sale = models.FloatField(default=0)
+    total = models.IntegerField(default=516)
 
     def __str__(self):
         return self.location
